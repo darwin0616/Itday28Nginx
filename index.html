@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Darwin's Sample</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $.getJSON("http://172.20.10.5:31080/api/leaderboard", function(jsondata){  	     $("#col_1").text(jsondata[0].player);
+     $("#col_2").text(jsondata[0].team);
+     $("#col_3").text(jsondata[0].level);
+     $("#col_4").text(jsondata[0].score);
+     $("#col_5").text(jsondata[0].battle);
+     $("#col_6").text(jsondata[1].player);
+     $("#col_7").text(jsondata[1].team);
+     $("#col_8").text(jsondata[1].level);
+     $("#col_9").text(jsondata[1].score);
+     $("#col_10").text(jsondata[1].battle);
+     $("#col_11").text(jsondata[2].player);
+     $("#col_12").text(jsondata[2].team);
+     $("#col_13").text(jsondata[2].level);
+     $("#col_14").text(jsondata[2].score);
+     $("#col_15").text(jsondata[2].battle);
+     $("#col_16").text(jsondata[3].player);
+     $("#col_17").text(jsondata[3].team);
+     $("#col_18").text(jsondata[3].level);
+     $("#col_19").text(jsondata[3].score);
+     $("#col_20").text(jsondata[3].battle);
+     $("#col_21").text(jsondata[4].player);
+     $("#col_22").text(jsondata[4].team);
+     $("#col_23").text(jsondata[4].level);
+     $("#col_24").text(jsondata[4].score);
+     $("#col_25").text(jsondata[4].battle);
+  });
+});
+</script>
+</head>
+<body>
+<center>
+  <h3>Darwin's NGINX GO 對戰聯盟<h3>
+  <h5>排名 | 第 3 賽季<h5>  
+  <table class="table table-bordered" style="background-color:skyblue;">
+    <thead>
+      <tr>
+        <th>排名</th>
+        <th>玩家名稱</th>
+        <th>隊伍</th>
+        <th>級別</th>
+        <th>分數</th>
+        <th>累積對戰次數</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td id=col_1></td>
+        <td id=col_2></td>
+        <td id=col_3></td>
+        <td id=col_4></td>
+        <td id=col_5></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td id=col_6></td>
+        <td id=col_7></td>
+        <td id=col_8></td>
+        <td id=col_9></td>
+        <td id=col_10></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td id=col_11></td>
+        <td id=col_12></td>
+        <td id=col_13></td>
+        <td id=col_14></td>
+        <td id=col_15></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td id=col_16></td>
+        <td id=col_17></td>
+        <td id=col_18></td>
+        <td id=col_19></td>
+        <td id=col_20></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td id=col_21></td>
+        <td id=col_22></td>
+        <td id=col_23></td>
+        <td id=col_24></td>
+        <td id=col_25></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5>
+    聲明：本頁面為『第12屆iT邦幫忙鐵人賽』第28天的解說範例，並無其他商業用途。
+  <h5> 
+<center>
+</body>
+</html>
